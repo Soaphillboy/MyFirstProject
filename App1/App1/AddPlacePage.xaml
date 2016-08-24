@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.AddPlacePage"
+             Title ="Add a Place">
+  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" 
+         />
+  <Grid
+    Padding="10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="70" />
+      <RowDefinition Height="70" />
+      <RowDefinition Height="70" />
+      <RowDefinition Height="70" />
+      <RowDefinition Height="70" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <Entry Placeholder="Place Name"
+       Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+           VerticalOptions="End"/>
+    <Entry Placeholder="Enter Location"
+             Grid.Row="1" Grid.Column="0"
+           VerticalOptions="End"/>
+    <Button Text="Use Location"
+            TextColor="White"
+            BackgroundColor="#c0392b"
+            Grid.Row="1" Grid.Column="1"/>
+    <Entry Placeholder="Details"
+           Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" 
+           VerticalOptions="End"/>
+    <Button Text="Add Photo"
+            TextColor="White"
+            BackgroundColor="#c0392b"
+             Grid.Row="3" Grid.Column="1" />
+    <Button Text="X"
+           TextColor="White"
+           BackgroundColor="#27ae60"
+            Grid.Row="4" Grid.Column="0"
+            VerticalPosition="End"
+            HorizontalPosition="Start"
+            WidthRequest="70"/>
+    <Button Text="Add"
+           TextColor="White"
+           BackgroundColor="#27ae60"
+            Grid.Row="4" Grid.Column="1"
+            VerticalPosition="End"
+            HorizontalPosition="End"
+            WidthRequest="70"/>
+
+  </Grid>
+  
+</ContentPage>
